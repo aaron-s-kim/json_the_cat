@@ -4,8 +4,8 @@ const breedName = process.argv[2]; // only takes 1st arg
 
 fetchBreedDescription(breedName, (error, desc) => {
   if (error) {
-    console.log(desc);
     console.log('Error fetch details:', error);
+    return;
   } else {
     console.log(desc);
   }

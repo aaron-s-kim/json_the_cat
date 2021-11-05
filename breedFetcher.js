@@ -11,7 +11,7 @@ const fetchBreedDescription = function(breedName, callback) {
     if (data.length !== 0) {
       desc = data[0]['description'];
     } else {
-      desc = 'hockey';
+      desc = null;
     }
     return callback(error, desc);
   });
